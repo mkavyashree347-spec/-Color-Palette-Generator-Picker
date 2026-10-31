@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Palette Generator</h1>
+    <p>Click any color block to copy its HEX code</p>
+
+    <div class="palette">
+      <div class="color-box" onclick="copyColor(this)"><span class="hex-text">#3498DB</span></div>
+      <div class="color-box" onclick="copyColor(this)"><span class="hex-text">#E74C3C</span></div>
+      <div class="color-box" onclick="copyColor(this)"><span class="hex-text">#2ECC71</span></div>
+      <div class="color-box" onclick="copyColor(this)"><span class="hex-text">#F1C40F</span></div>
+    </div>
+
+    <button onclick="generatePalette()">Generate New Colors</button>
+    <p id="toast" class="toast">Copied to clipboard!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
